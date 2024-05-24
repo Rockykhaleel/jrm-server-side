@@ -61,6 +61,11 @@ app.use("/Uploads", express.static(path.join(__dirname, "./Uploads")));
 
 const port = process.env.PORT || 4000;
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.listen(port, () => {
-  console.log("Server Started...");
+  console.log(`Server Started`);
+  console.log(`Server running on port ${port}`);
 });
