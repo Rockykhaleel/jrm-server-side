@@ -59,6 +59,8 @@ app.use("/api/upload", require("./routes/upload_image"));
 
 app.use("/Uploads", express.static(path.join(__dirname, "./Uploads")));
 
-app.listen("8080", () => {
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
   console.log("Server Started...");
 });
