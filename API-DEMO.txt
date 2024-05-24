@@ -1,0 +1,8 @@
+API-REGISTER-POST
+//==============================================================
+//URL
+localhost:8080/api/user/register
+//JSON
+{
+    "name":"Khaleel", "address":"Mysore", "phone":"1230456789", "email":"r3khaleelshariff@gmail.com", "password":"khals"
+}
